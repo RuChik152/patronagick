@@ -8482,11 +8482,28 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    header .main__menu .main__menu__item a {
-      margin-left: 68px;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 0.095em; }
+    header .main__menu .main__menu__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      header .main__menu .main__menu__item a {
+        display: block;
+        margin-left: 68px;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.095em;
+        position: relative; }
+        header .main__menu .main__menu__item a:before {
+          content: "";
+          position: absolute;
+          width: 0px;
+          bottom: -2px;
+          background-color: #793333;
+          height: 2px;
+          -webkit-transition: width 0.3s ease;
+          transition: width 0.3s ease; }
+        header .main__menu .main__menu__item a:hover:before {
+          width: 100%; }
 
 /* основные стили */
 body .content section .section__banner {
@@ -8501,7 +8518,15 @@ body .content section .section__banner {
     width: 254px;
     text-align: center;
     padding-top: 16px;
-    font-size: 21px; }
+    font-size: 21px;
+    position: relative;
+    top: 461px;
+    left: 126px; }
+    body .content section .section__banner a:hover {
+      border: 4px solid #b33131;
+      color: #b33131;
+      -webkit-transition: 1s;
+      transition: 1s; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
