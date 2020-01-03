@@ -8447,8 +8447,13 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%; }
 
 /* общие стили */
+* {
+  margin: 0px;
+  padding: 0px; }
+
 body {
-  background-color: #BA9D9D; }
+  background-color: #BA9D9D;
+  overflow: auto; }
 
 a {
   color: #793333;
@@ -8464,8 +8469,14 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: Roboto; }
+
 /* HEADER */
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 43px;
   margin-top: 28px;
   margin-bottom: 28px; }
@@ -8476,6 +8487,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #BA9D9D;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8506,27 +8518,81 @@ header {
           width: 100%; }
 
 /* основные стили */
-body .content section .section__banner {
-  background: url(../images/banner.svg);
-  height: 577.46px; }
-  body .content section .section__banner a {
-    display: block;
-    border: 4px solid #793333;
-    border-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    height: 71px;
-    width: 254px;
-    text-align: center;
-    padding-top: 16px;
-    font-size: 21px;
-    position: relative;
-    top: 461px;
-    left: 126px; }
-    body .content section .section__banner a:hover {
-      border: 4px solid #b33131;
-      color: #b33131;
-      -webkit-transition: 1s;
-      transition: 1s; }
+body .content section {
+  margin-bottom: 35px; }
+  body .content section .section__banner {
+    background: url(../images/banner.svg);
+    height: 577.46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .content section .section__banner .button {
+      border: 4px solid #793333;
+      border-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      height: 71px;
+      width: 254px;
+      text-align: center;
+      padding-top: 16px;
+      font-size: 21px;
+      margin-top: 448px;
+      margin-left: 223px; }
+      body .content section .section__banner .button:hover {
+        border: 4px solid #b33131;
+        color: #b33131;
+        -webkit-transition: 1s;
+        transition: 1s; }
+  body .content section .site__content__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 19px; }
+    body .content section .site__content__blocks a {
+      display: block; }
+      body .content section .site__content__blocks a .site__content__blocks_topic {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background-color: #DDCACA;
+        width: 360px;
+        height: 262px;
+        border-radius: 2px;
+        margin-top: 20px;
+        padding: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25); }
+        body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item {
+          border: 3px dashed rgba(255, 255, 255, 0.42);
+          border-radius: 14px;
+          width: 344px;
+          height: 245px;
+          margin: 1px; }
+          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item img {
+            width: 157px;
+            height: 178px;
+            margin-top: 15px;
+            margin-left: 6px; }
+          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item h6 {
+            text-align: right;
+            font-weight: 600;
+            margin-right: 10px;
+            text-transform: uppercase;
+            display: block;
+            margin-left: auto;
+            margin-top: -30px;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: min-content; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
@@ -8534,5 +8600,9 @@ footer {
   height: 377px;
   min-height: 377px;
   margin-top: 10px; }
-  footer p {
-    text-align: center; }
+  footer .footer_p {
+    padding-top: 310px; }
+    footer .footer_p p {
+      text-align: center;
+      display: block;
+      margin-bottom: 0px; }
