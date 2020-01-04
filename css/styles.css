@@ -8571,6 +8571,14 @@ body .content section {
                 align-items: center;
         -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25);
                 box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25); }
+        body .content section .site__content__blocks a .site__content__blocks_topic:hover svg path {
+          fill: #bb3838;
+          -webkit-transition: 1s ease;
+          transition: 1s ease; }
+        body .content section .site__content__blocks a .site__content__blocks_topic:hover h6 {
+          color: #bb3838;
+          -webkit-transition: 1s ease;
+          transition: 1s ease; }
         body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item {
           border: 3px dashed rgba(255, 255, 255, 0.42);
           border-radius: 14px;
@@ -8598,9 +8606,6 @@ body .content section {
             width: -webkit-min-content;
             width: -moz-min-content;
             width: min-content; }
-
-.mater {
-  fill: black; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
