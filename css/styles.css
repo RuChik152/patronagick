@@ -8518,15 +8518,15 @@ header {
           width: 100%; }
 
 /* основные стили */
-body .content section {
+body .wrap .content section {
   margin-bottom: 35px; }
-  body .content section .section__banner {
+  body .wrap .content section .section__banner {
     background: url(../images/banner.svg);
     height: 577.46px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    body .content section .section__banner .button {
+    body .wrap .content section .section__banner .button {
       border: 4px solid #793333;
       border-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 12px;
@@ -8537,12 +8537,12 @@ body .content section {
       font-size: 21px;
       margin-top: 448px;
       margin-left: 223px; }
-      body .content section .section__banner .button:hover {
+      body .wrap .content section .section__banner .button:hover {
         border: 4px solid #b33131;
         color: #b33131;
         -webkit-transition: 1s;
         transition: 1s; }
-  body .content section .site__content__blocks {
+  body .wrap .content section .site__content__blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8552,9 +8552,9 @@ body .content section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 19px; }
-    body .content section .site__content__blocks a {
+    body .wrap .content section .site__content__blocks a {
       display: block; }
-      body .content section .site__content__blocks a .site__content__blocks_topic {
+      body .wrap .content section .site__content__blocks a .site__content__blocks_topic {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         background-color: #DDCACA;
@@ -8571,31 +8571,41 @@ body .content section {
                 align-items: center;
         -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25);
                 box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25), -4px 6px 4px rgba(0, 0, 0, 0.25); }
-        body .content section .site__content__blocks a .site__content__blocks_topic:hover svg path {
-          fill: #bb3838;
-          -webkit-transition: 1s ease;
-          transition: 1s ease; }
-        body .content section .site__content__blocks a .site__content__blocks_topic:hover h6 {
-          color: #bb3838;
-          -webkit-transition: 1s ease;
-          transition: 1s ease; }
-        body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item {
+        body .wrap .content section .site__content__blocks a .site__content__blocks_topic svg {
+          margin-top: 15px;
+          margin-left: 6px; }
+        body .wrap .content section .site__content__blocks a .site__content__blocks_topic:hover {
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1);
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          -webkit-transition: 0.8s;
+          transition: 0.8s; }
+          body .wrap .content section .site__content__blocks a .site__content__blocks_topic:hover svg path {
+            fill: #bb3838;
+            -webkit-transition: 1s ease;
+            transition: 1s ease; }
+          body .wrap .content section .site__content__blocks a .site__content__blocks_topic:hover h6 {
+            color: #bb3838;
+            -webkit-transition: 1s ease;
+            transition: 1s ease; }
+        body .wrap .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item {
           border: 3px dashed rgba(255, 255, 255, 0.42);
           border-radius: 14px;
           width: 344px;
           height: 245px;
           margin: 1px; }
-          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item img {
+          body .wrap .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item img {
             width: 157px;
             height: 178px;
             margin-top: 15px;
             margin-left: 6px; }
-          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item object {
+          body .wrap .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item object {
             width: 157px;
             height: 178px;
             margin-top: 15px;
             margin-left: 6px; }
-          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item h6 {
+          body .wrap .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item h6 {
             text-align: right;
             font-weight: 600;
             margin-right: 10px;
