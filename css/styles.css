@@ -8523,7 +8523,8 @@ header {
 body .wrap {
   background: url(../images/fon.svg) no-repeat center; }
   body .wrap .content section {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    /*TOPIC CSS*/ }
     body .wrap .content section .section__banner {
       background: url(../images/banner.svg);
       height: 577.46px;
@@ -8619,6 +8620,55 @@ body .wrap {
               width: -webkit-min-content;
               width: -moz-min-content;
               width: min-content; }
+    body .wrap .content section .section__topic {
+      margin-top: 129px; }
+      body .wrap .content section .section__topic .section__topic_name h4 {
+        margin-bottom: 0px; }
+      body .wrap .content section .section__topic .section__topic_themes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 13px;
+        background-color: #DDCACA;
+        -webkit-box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25), -7px 7px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25), -7px 7px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px; }
+        body .wrap .content section .section__topic .section__topic_themes a {
+          width: 387px;
+          height: 318px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 100px; }
+          body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover svg path {
+              fill: #793333;
+              -webkit-transition: 1s ease;
+              transition: 1s ease; }
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover h6 {
+              -webkit-transform: translateY(-15px);
+                      transform: translateY(-15px);
+              -webkit-transition: 1s;
+              transition: 1s; }
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center {
+              margin-left: auto;
+              margin-right: auto; }
+              body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center svg {
+                margin-bottom: 17px; }
+              body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center img {
+                margin-bottom: 17px; }
+              body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center h6 {
+                width: 188px;
+                font-weight: 600;
+                text-align: center;
+                padding-left: 20px; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
