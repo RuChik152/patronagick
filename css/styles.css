@@ -8582,6 +8582,11 @@ body .content section {
             height: 178px;
             margin-top: 15px;
             margin-left: 6px; }
+          body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item object {
+            width: 157px;
+            height: 178px;
+            margin-top: 15px;
+            margin-left: 6px; }
           body .content section .site__content__blocks a .site__content__blocks_topic .site__content__blocks_topic-item h6 {
             text-align: right;
             font-weight: 600;
@@ -8593,6 +8598,9 @@ body .content section {
             width: -webkit-min-content;
             width: -moz-min-content;
             width: min-content; }
+
+.mater {
+  fill: black; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
