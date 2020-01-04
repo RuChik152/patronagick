@@ -8470,7 +8470,9 @@ a {
   margin-right: auto; }
 
 h1, h2, h3, h4, h5, h6, a, p {
-  font-family: Roboto; }
+  font-family: Roboto;
+  color: #793333;
+  text-transform: uppercase; }
 
 /* HEADER */
 header {
@@ -8611,7 +8613,6 @@ body .wrap {
               text-align: right;
               font-weight: 600;
               margin-right: 10px;
-              text-transform: uppercase;
               display: block;
               margin-left: auto;
               margin-top: -30px;
