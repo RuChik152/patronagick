@@ -8650,9 +8650,12 @@ body .wrap {
                     align-items: center; }
             body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover svg path {
               fill: #793333;
+              fill-opacity: 1;
               -webkit-transition: 1s ease;
               transition: 1s ease; }
-            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover h6 {
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item svg path {
+              fill-opacity: 0; }
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item svg h6 {
               -webkit-transform: translateY(-15px);
                       transform: translateY(-15px);
               -webkit-transition: 1s;
