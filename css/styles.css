@@ -8525,7 +8525,8 @@ body .wrap {
   body .wrap .content section {
     margin-bottom: 35px;
     /*TOPIC CSS*/
-    /*ARTICLE CSS*/ }
+    /*ARTICLE CSS*/
+    /*STATE CSS*/ }
     body .wrap .content section .section__banner {
       background: url(../images/banner.svg);
       height: 577.46px;
@@ -8711,39 +8712,54 @@ body .wrap {
           margin-left: 19px;
           margin-top: auto;
           margin-bottom: auto; }
-        body .wrap .content section .section__themes_article .section__themes_article_block a {
-          display: block;
-          width: -webkit-fit-content;
-          width: -moz-fit-content;
-          width: fit-content;
-          height: -webkit-fit-content;
-          height: -moz-fit-content;
-          height: fit-content;
-          margin-left: 46px;
-          margin-top: 53px; }
-        body .wrap .content section .section__themes_article .section__themes_article_block .button {
-          display: block;
-          width: 162px;
-          height: 58px;
-          background: #793333;
-          border-radius: 4px;
-          color: #DDCACA;
-          font-weight: 500;
-          font-size: 25px;
-          line-height: 29px;
+        body .wrap .content section .section__themes_article .section__themes_article_block .section__themes_article_block-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          padding: 15px;
-          position: relative;
-          top: 120px;
-          left: 184px; }
-          body .wrap .content section .section__themes_article .section__themes_article_block .button img {
-            width: 30px;
-            height: 31px; }
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 665px;
+          margin-left: 20px; }
+          body .wrap .content section .section__themes_article .section__themes_article_block .section__themes_article_block-item a {
+            display: block;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            margin-top: 53px; }
+            body .wrap .content section .section__themes_article .section__themes_article_block .section__themes_article_block-item a p {
+              font-size: 21px;
+              font-weight: 600; }
+          body .wrap .content section .section__themes_article .section__themes_article_block .section__themes_article_block-item .button {
+            display: block;
+            width: 162px;
+            height: 58px;
+            background: #793333;
+            border-radius: 4px;
+            color: #DDCACA;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding: 15px;
+            margin-top: 180px; }
+            body .wrap .content section .section__themes_article .section__themes_article_block .section__themes_article_block-item .button img {
+              width: 30px;
+              height: 31px; }
+    body .wrap .content section .section_article_banner {
+      margin-top: 70px; }
+    body .wrap .content section .section_article {
+      background-color: #DDCACA; }
+      body .wrap .content section .section_article .line {
+        margin-left: 150px; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
