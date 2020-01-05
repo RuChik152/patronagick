@@ -8523,7 +8523,8 @@ header {
 body .wrap {
   background: url(../images/fon.svg) no-repeat center; }
   body .wrap .content section {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    /*TOPIC CSS*/ }
     body .wrap .content section .section__banner {
       background: url(../images/banner.svg);
       height: 577.46px;
@@ -8619,7 +8620,6 @@ body .wrap {
               width: -webkit-min-content;
               width: -moz-min-content;
               width: min-content; }
-<<<<<<< HEAD
     body .wrap .content section .section__topic {
       margin-top: 129px; }
       body .wrap .content section .section__topic .section__topic_name h4 {
@@ -8649,17 +8649,17 @@ body .wrap {
                 -ms-flex-align: center;
                     align-items: center; }
             body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover svg path {
-              fill: #793333;
               fill-opacity: 1;
-              -webkit-transition: 1s ease;
-              transition: 1s ease; }
+              fill: #793333;
+              -webkit-transition: 1.5s ease;
+              transition: 1.5s ease; }
+            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item:hover h6 {
+              -webkit-transform: translateY(100px);
+                      transform: translateY(100px);
+              -webkit-transition: 1.5s;
+              transition: 1.5s; }
             body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item svg path {
               fill-opacity: 0; }
-            body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item svg h6 {
-              -webkit-transform: translateY(-15px);
-                      transform: translateY(-15px);
-              -webkit-transition: 1s;
-              transition: 1s; }
             body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center {
               margin-left: auto;
               margin-right: auto; }
@@ -8669,11 +8669,12 @@ body .wrap {
                 margin-bottom: 17px; }
               body .wrap .content section .section__topic .section__topic_themes a .section__topic_themes-item .section__topic_themes-item-center h6 {
                 width: 188px;
+                font-size: 20px;
                 font-weight: 600;
                 text-align: center;
-                padding-left: 20px; }
-=======
->>>>>>> parent of bd30aea... 4day 23:22
+                padding-left: 20px;
+                position: relative;
+                top: -100px; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
