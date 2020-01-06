@@ -8519,7 +8519,7 @@ header {
         header .main__menu .main__menu__item a:hover:before {
           width: 100%; }
 
-/* основные стили */
+/* index.html */
 body .wrap {
   background: url(../images/fon.svg) no-repeat center; }
   body .wrap .content section {
@@ -8757,9 +8757,59 @@ body .wrap {
     body .wrap .content section .section_article_banner {
       margin-top: 70px; }
     body .wrap .content section .section_article {
-      background-color: #DDCACA; }
+      background-color: #DDCACA;
+      padding-bottom: 1px; }
       body .wrap .content section .section_article .line {
+        margin-top: 2%;
+        margin-bottom: 2%;
         margin-left: 150px; }
+      body .wrap .content section .section_article .section_article_content .arrow-1 {
+        margin-top: 2%;
+        margin-left: 20%; }
+      body .wrap .content section .section_article .section_article_content .arrow-2 {
+        margin-left: 31%;
+        margin-top: -14%;
+        margin-bottom: -7%; }
+      body .wrap .content section .section_article .section_article_content .section_article_content-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 906px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        body .wrap .content section .section_article .section_article_content .section_article_content-item img:nth-child(odd) {
+          margin-right: 105px; }
+        body .wrap .content section .section_article .section_article_content .section_article_content-item img:nth-child(even) {
+          margin-left: 105px; }
+        body .wrap .content section .section_article .section_article_content .section_article_content-item p {
+          text-transform: none; }
+      body .wrap .content section .section_article .section_article_end {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 428px;
+        height: 32px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%; }
+        body .wrap .content section .section_article .section_article_end hr {
+          width: 133px; }
+        body .wrap .content section .section_article .section_article_end h6 {
+          margin-bottom: 0px;
+          margin-left: 42px;
+          margin-right: 42px;
+          font-size: 21px;
+          line-height: 153.4%;
+          letter-spacing: 0.095em;
+          color: rgba(121, 51, 51, 0.53); }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
