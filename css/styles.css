@@ -8474,14 +8474,20 @@ h1, h2, h3, h4, h5, h6, a, p {
   color: #793333;
   text-transform: uppercase; }
 
+li {
+  list-style: none; }
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
 /* HEADER */
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 43px;
-  margin-top: 28px;
-  margin-bottom: 28px; }
+  height: 43px; }
   header .main__menu {
     width: 1140px;
     margin-left: auto;
@@ -8499,25 +8505,42 @@ header {
     header .main__menu .main__menu__item {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-bottom: 0px; }
       header .main__menu .main__menu__item a {
         display: block;
-        margin-left: 68px;
+        padding: 14px 15px;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.095em;
         position: relative; }
-        header .main__menu .main__menu__item a:before {
-          content: "";
-          position: absolute;
-          width: 0px;
-          bottom: -2px;
-          background-color: #793333;
-          height: 2px;
-          -webkit-transition: width 0.3s ease;
-          transition: width 0.3s ease; }
-        header .main__menu .main__menu__item a:hover:before {
-          width: 100%; }
+      header .main__menu .main__menu__item li:hover {
+        background-color: #c5aaaa; }
+      header .main__menu .main__menu__item li .down__menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        background-color: #c5aaaa;
+        z-index: 1; }
+        header .main__menu .main__menu__item li .down__menu a:hover {
+          text-decoration: underline;
+          -webkit-transition: -webkit-text-decoration 1s ease;
+          transition: -webkit-text-decoration 1s ease;
+          transition: text-decoration 1s ease;
+          transition: text-decoration 1s ease, -webkit-text-decoration 1s ease; }
+
+.down_menu--horz > li:hover .down__menu {
+  max-height: 500px; }
+
+.down_menu--horz .down__menu {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s linear;
+  transition: max-height 0.7s linear; }
 
 /* index.html */
 body .wrap {
@@ -8526,7 +8549,8 @@ body .wrap {
     margin-bottom: 35px;
     /*TOPIC CSS*/
     /*ARTICLE CSS*/
-    /*STATE CSS*/ }
+    /*STATE CSS*/
+    /*FEEDBACK CSS*/ }
     body .wrap .content section .section__banner {
       background: url(../images/banner.svg);
       height: 577.46px;
@@ -8810,6 +8834,105 @@ body .wrap {
           line-height: 153.4%;
           letter-spacing: 0.095em;
           color: rgba(121, 51, 51, 0.53); }
+    body .wrap .content section .section_name {
+      margin-top: 89px;
+      margin-bottom: 59px; }
+      body .wrap .content section .section_name h2 {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 54px;
+        text-align: center; }
+    body .wrap .content section .section_form {
+      height: 881px;
+      background-color: #DDCACA;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      body .wrap .content section .section_form img {
+        width: 231px;
+        height: 330px;
+        margin-left: 137px;
+        margin-top: 156px; }
+      body .wrap .content section .section_form .section_form-items {
+        width: 391px;
+        margin-right: 96px;
+        margin-top: 124px; }
+        body .wrap .content section .section_form .section_form-items input {
+          width: 391px;
+          height: 62px;
+          margin-top: 29px;
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 25px;
+          background: #E7E5E6;
+          border: 1px solid rgba(35, 35, 35, 0.42);
+          padding: 0 5px; }
+          body .wrap .content section .section_form .section_form-items input::-webkit-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px; }
+          body .wrap .content section .section_form .section_form-items input::-moz-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px; }
+          body .wrap .content section .section_form .section_form-items input:-ms-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px; }
+          body .wrap .content section .section_form .section_form-items input::-ms-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px; }
+          body .wrap .content section .section_form .section_form-items input::placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px; }
+        body .wrap .content section .section_form .section_form-items textarea {
+          width: 391px;
+          min-height: 288px;
+          max-height: 380px;
+          margin-top: 60px;
+          background-color: #E7E5E6;
+          border: 1px solid rgba(35, 35, 35, 0.42);
+          padding-top: 2px;
+          padding-left: 4px; }
+          body .wrap .content section .section_form .section_form-items textarea::-webkit-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px;
+            padding-top: 10px; }
+          body .wrap .content section .section_form .section_form-items textarea::-moz-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px;
+            padding-top: 10px; }
+          body .wrap .content section .section_form .section_form-items textarea:-ms-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px;
+            padding-top: 10px; }
+          body .wrap .content section .section_form .section_form-items textarea::-ms-input-placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px;
+            padding-top: 10px; }
+          body .wrap .content section .section_form .section_form-items textarea::placeholder {
+            color: #C4C4C4;
+            font-size: 21px;
+            padding-left: 20px;
+            padding-top: 10px; }
+        body .wrap .content section .section_form .section_form-items .button {
+          width: 216px;
+          height: 70px;
+          background-color: #793333;
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 25px;
+          color: #FFFFFF;
+          float: right; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;

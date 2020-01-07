@@ -12,7 +12,20 @@
   <!--header-->
   <header>
     <div class="main__menu"><a href="index.html"><img src="./images/logo.svg" alt="logo"/></a>
-      <div class="main__menu__item"><a href="#">ПОМОЩЬ МАМЕ</a><a href="#">РУБРИКИ</a><a href="feedback.html">ЗАДАТЬ ВОПРОС</a></div>
+      <ul class="main__menu__item clearfix down_menu--horz">
+        <li><a href="#">ПОМОЩЬ МАМЕ</a></li>
+        <li><a href="#">РУБРИКИ</a>
+          <ul class="down__menu">
+            <li><a href="#">Первая пища малыша</a></li>
+            <li><a href="#">Уход за новорожденным</a></li>
+            <li><a href="#">Душевный покой мамы</a></li>
+            <li><a href="#">Ох, уж этот животик</a></li>
+            <li><a href="#">Почему малыш желтый</a></li>
+            <li><a href="#">Прививки</a></li>
+          </ul>
+        </li>
+        <li><a href="feedback.html">ЗАДАТЬ ВОПРОС</a></li>
+      </ul>
     </div>
   </header>
   <!--end header-->
@@ -29,7 +42,7 @@
               <input type="text" name="name" placeholder="Ваше имя"/>
               <input type="text" name="mail" placeholder="e-mail"/>
               <textarea name="text" placeholder="Ваш вопрос"></textarea>
-              <input type="submit" value="ОТПРАВИТЬ"/>
+              <input class="button" type="submit" value="ОТПРАВИТЬ"/>
             </form>
           </div>
         </div>
