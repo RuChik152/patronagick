@@ -8543,8 +8543,9 @@ header {
   transition: max-height 0.7s linear; }
 
 /* index.html */
-body .wrap {
-  background: url(../images/fon.svg) no-repeat center; }
+body {
+  background: url(../images/fon.svg) no-repeat;
+  background-color: #BA9D9D; }
   body .wrap .content section {
     margin-bottom: 35px;
     /*TOPIC CSS*/
@@ -8650,7 +8651,7 @@ body .wrap {
               width: -moz-min-content;
               width: min-content; }
     body .wrap .content section .section__topic {
-      margin-top: 129px; }
+      margin-top: 50px; }
       body .wrap .content section .section__topic .section__topic_name h4 {
         margin-bottom: 0px; }
       body .wrap .content section .section__topic .section__topic_themes {
@@ -8936,34 +8937,46 @@ body .wrap {
           line-height: 25px;
           color: #FFFFFF;
           float: right; }
-    body .wrap .content section .section__help__mom {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      padding: 33px 50px;
-      background-color: #DDCACA; }
-      body .wrap .content section .section__help__mom .section__help__mom__block {
-        width: 237px;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-        margin-left: auto;
-        margin-right: auto; }
-        body .wrap .content section .section__help__mom .section__help__mom__block hr {
-          width: 203px;
-          margin-left: auto;
-          margin-right: auto; }
-        body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item p {
-          text-transform: none; }
-        body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item a {
-          text-decoration: underline; }
-          body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item a h3 {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 0.098em; }
+    body .wrap .content section .section__help {
+      margin-top: 50px; }
+      body .wrap .content section .section__help .section__help__mom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 33px 50px;
+        background-color: #DDCACA; }
+        body .wrap .content section .section__help .section__help__mom .section__help__mom__block {
+          width: 237px;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+          margin-left: 52px;
+          margin-right: 52px; }
+          body .wrap .content section .section__help .section__help__mom .section__help__mom__block hr {
+            width: 203px;
+            margin-left: auto;
+            margin-right: auto; }
+          body .wrap .content section .section__help .section__help__mom .section__help__mom__block .section__help__mom__block-item p {
+            text-transform: none; }
+          body .wrap .content section .section__help .section__help__mom .section__help__mom__block .section__help__mom__block-item a {
+            text-decoration: underline; }
+            body .wrap .content section .section__help .section__help__mom .section__help__mom__block .section__help__mom__block-item a h3 {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.098em;
+              margin-bottom: 0px; }
+          body .wrap .content section .section__help .section__help__mom .section__help__mom__block .section__help__mom__block-item .section__help__mom__block-item_contacts img {
+            margin-right: 7px; }
+          body .wrap .content section .section__help .section__help__mom .section__help__mom__block .section__help__mom__block-item .section__help__mom__block-item_contacts .section__help__mom__block-item_contact {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
