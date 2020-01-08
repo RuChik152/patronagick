@@ -8550,9 +8550,10 @@ body .wrap {
     /*TOPIC CSS*/
     /*ARTICLE CSS*/
     /*STATE CSS*/
-    /*FEEDBACK CSS*/ }
+    /*FEEDBACK CSS*/
+    /*HELP_MOM CSS*/ }
     body .wrap .content section .section__banner {
-      background: url(../images/banner.svg);
+      background: url(../images/banner.png);
       height: 577.46px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -8610,8 +8611,10 @@ body .wrap {
                     transform: scale(1.1);
             -webkit-box-shadow: none;
                     box-shadow: none;
-            -webkit-transition: 0.8s;
-            transition: 0.8s; }
+            -webkit-transition: -webkit-transform 0.8s ease;
+            transition: -webkit-transform 0.8s ease;
+            transition: transform 0.8s ease;
+            transition: transform 0.8s ease, -webkit-transform 0.8s ease; }
             body .wrap .content section .site__content__blocks a .site__content__blocks_topic:hover svg path {
               fill: #bb3838;
               -webkit-transition: 1s ease;
@@ -8933,6 +8936,34 @@ body .wrap {
           line-height: 25px;
           color: #FFFFFF;
           float: right; }
+    body .wrap .content section .section__help__mom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 33px 50px;
+      background-color: #DDCACA; }
+      body .wrap .content section .section__help__mom .section__help__mom__block {
+        width: 237px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto; }
+        body .wrap .content section .section__help__mom .section__help__mom__block hr {
+          width: 203px;
+          margin-left: auto;
+          margin-right: auto; }
+        body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item p {
+          text-transform: none; }
+        body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item a {
+          text-decoration: underline; }
+          body .wrap .content section .section__help__mom .section__help__mom__block .section__help__mom__block-item a h3 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.098em; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
