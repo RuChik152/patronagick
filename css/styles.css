@@ -9034,3 +9034,27 @@ footer {
       text-align: center;
       display: block;
       margin-bottom: 0px; }
+
+/*MEDIA*/
+@media screen and (min-width: 500px) {
+  header .main__menu .main__down__menu {
+    display: none; } }
+
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px; }
+    body .wrap .content {
+      width: 320px; }
+      body .wrap .content section .section__banner {
+        display: none; }
+  header {
+    position: none; }
+    header .main__menu {
+      display: block;
+      width: 320px; }
+      header .main__menu .main__menu__item {
+        display: none; }
+      header .main__menu .main__down__menu li a {
+        text-decoration: underline; }
+        header .main__menu .main__down__menu li a:hover {
+          color: red; } }
