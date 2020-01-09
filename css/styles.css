@@ -8487,7 +8487,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 43px; }
+  height: 43px;
+  z-index: 10; }
   header .main__menu {
     width: 1140px;
     margin-left: auto;
@@ -8552,7 +8553,8 @@ body {
     /*ARTICLE CSS*/
     /*STATE CSS*/
     /*FEEDBACK CSS*/
-    /*HELP_MOM CSS*/ }
+    /*HELP_MOM CSS*/
+    /*ABOUT CSS*/ }
     body .wrap .content section .section__banner {
       background: url(../images/banner.png);
       height: 577.46px;
@@ -8872,7 +8874,8 @@ body {
           font-size: 21px;
           line-height: 25px;
           background: #E7E5E6;
-          border: 1px solid rgba(35, 35, 35, 0.42);
+          border: 1px solid #cecece;
+          border-radius: 3px;
           padding: 0 5px; }
           body .wrap .content section .section_form .section_form-items input::-webkit-input-placeholder {
             color: #C4C4C4;
@@ -8900,7 +8903,8 @@ body {
           max-height: 380px;
           margin-top: 60px;
           background-color: #E7E5E6;
-          border: 1px solid rgba(35, 35, 35, 0.42);
+          border: 1px solid #cecece;
+          border-radius: 3px;
           padding-top: 2px;
           padding-left: 4px; }
           body .wrap .content section .section_form .section_form-items textarea::-webkit-input-placeholder {
@@ -8977,6 +8981,45 @@ body {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center; }
+    body .wrap .content section .section_about {
+      margin-top: 80px; }
+      body .wrap .content section .section_about .section_about__block {
+        background-color: #DDCACA;
+        padding-top: 55px;
+        padding-bottom: 70px;
+        padding-left: 55px;
+        padding-right: 55px; }
+        body .wrap .content section .section_about .section_about__block hr {
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto; }
+        body .wrap .content section .section_about .section_about__block .section_about__block__portfolio_author {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-bottom: 139px; }
+          body .wrap .content section .section_about .section_about__block .section_about__block__portfolio_author .section_about__block__portfolio {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            body .wrap .content section .section_about .section_about__block .section_about__block__portfolio_author .section_about__block__portfolio .one {
+              position: relative;
+              z-index: 2;
+              left: 52px; }
+            body .wrap .content section .section_about .section_about__block .section_about__block__portfolio_author .section_about__block__portfolio .two {
+              position: relative;
+              z-index: 1;
+              top: 87px;
+              left: -74px; }
+          body .wrap .content section .section_about .section_about__block .section_about__block__portfolio_author .section_about__block__author {
+            margin-top: auto;
+            margin-bottom: auto; }
+        body .wrap .content section .section_about .section_about__block .section_about__block__text {
+          width: 84%;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify; }
 
 footer {
   background: url(../images/footer_2.svg) no-repeat center bottom;
