@@ -8506,50 +8506,53 @@ header {
   top: 0;
   height: 43px;
   z-index: 10; }
-  header .main__menu {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #BA9D9D;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    header .main__menu .main__menu__item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 0px; }
-      header .main__menu .main__menu__item a {
-        display: block;
-        padding: 14px 15px;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.095em;
-        position: relative; }
-      header .main__menu .main__menu__item li:hover {
-        background-color: #c5aaaa; }
-      header .main__menu .main__menu__item li .down__menu {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        background-color: #c5aaaa;
-        z-index: 1; }
-        header .main__menu .main__menu__item li .down__menu a:hover {
-          text-decoration: underline;
-          -webkit-transition: -webkit-text-decoration 1s ease;
-          transition: -webkit-text-decoration 1s ease;
-          transition: text-decoration 1s ease;
-          transition: text-decoration 1s ease, -webkit-text-decoration 1s ease; }
+
+.main__menu {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #BA9D9D;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main__menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px; }
+  .main__menu__item a {
+    display: block;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
+    position: relative; }
+  .main__menu__item li:hover {
+    background-color: #c5aaaa; }
+
+.down__menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #c5aaaa;
+  z-index: 1; }
+  .down__menu a:hover {
+    text-decoration: underline;
+    -webkit-transition: -webkit-text-decoration 1s ease;
+    transition: -webkit-text-decoration 1s ease;
+    transition: text-decoration 1s ease;
+    transition: text-decoration 1s ease, -webkit-text-decoration 1s ease; }
 
 .down_menu--horz > li:hover .down__menu {
   max-height: 500px; }
@@ -9075,10 +9078,50 @@ footer {
   height: 377px;
   min-height: 377px;
   margin-top: 10px; }
-  footer .footer_p {
-    padding-top: 342px; }
-    footer .footer_p p {
-      font-size: 11px;
-      text-align: center;
-      display: block;
-      margin-bottom: 0px; }
+
+.footer_p {
+  padding-top: 342px; }
+  .footer_p p {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    margin-bottom: 0px; }
+
+@media screen and (max-width: 320px) {
+  header {
+    position: static;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; }
+  .content {
+    width: 100%; }
+  .main__menu {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #BA9D9D; }
+  .main__menu__item {
+    display: block; }
+  .section__banner {
+    display: none; }
+  .site__content__blocks {
+    width: 100%;
+    display: block;
+    margin-top: 19px; }
+    .site__content__blocks a {
+      width: 100%; }
+  footer {
+    background: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin-top: 10px; }
+  .footer_p {
+    padding-top: 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; } }
