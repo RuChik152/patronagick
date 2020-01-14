@@ -9218,6 +9218,15 @@ footer {
       width: 100%;
       padding-left: 0px;
       font-size: 16px; }
+  .section__themes_article {
+    width: 100%; }
+  .section__themes_article_block {
+    width: 100%; }
+    .section__themes_article_block img {
+      width: 30%; }
+  .section__themes_article_block-item {
+    width: 100%;
+    display: block; }
   footer {
     background: none;
     height: -webkit-fit-content;
