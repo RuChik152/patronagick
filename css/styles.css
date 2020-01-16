@@ -9110,6 +9110,8 @@ footer {
 
 @media screen and (min-width: 502px) {
   .mobile_banner {
+    display: none; }
+  a.about {
     display: none; } }
 
 @media screen and (max-width: 501px) {
@@ -9304,6 +9306,35 @@ footer {
   .section__help__mom__block {
     margin-left: auto;
     margin-right: auto; }
+  .section_about {
+    margin-top: 10%; }
+  .section_about__block {
+    padding: 0px;
+    padding-top: 5%; }
+  .section_about__block__portfolio_author {
+    display: block;
+    margin-bottom: 1%; }
+  .section_about__block__portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+    .section_about__block__portfolio img:nth-child(odd) {
+      width: 50%; }
+    .section_about__block__portfolio img:nth-child(even) {
+      width: 50%;
+      top: 22px;
+      left: -44px; }
+  .section_about__block__author {
+    margin-top: 12%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .section_about__block__author p {
+      text-transform: none;
+      padding: 1% 4%;
+      text-align: center; }
+  .section_about__block__text p {
+    text-transform: none; }
   footer {
     background: none;
     height: -webkit-fit-content;
